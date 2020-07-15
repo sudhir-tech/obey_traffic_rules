@@ -1,0 +1,49 @@
+public class Switch_statement {
+
+	public static void main(String[] args) {
+		if(args.length == 1) {
+
+			final String monthName = args[0].toUpperCase();
+			int noOfDays=0;
+
+			switch (monthName) {
+			case "JAN": 
+			case "MAR": 
+			case "MAY": 
+			case "JUL": 
+			case "AUG":
+			case "Oct": 
+			case "DEC":
+				noOfDays = 31;
+				break;
+
+			case "APR": 
+			case "JUN":
+			case "SEPT": 
+			case "NOV":
+				noOfDays = 30;
+				break;
+
+			case "FEB":
+				noOfDays = 28;
+				break;
+
+			default:
+				System.out.println("Not a valid month!");
+				break;
+			}
+
+			if(noOfDays != 0)
+				System.out.println("No of days in the Month " + monthName + " is " + noOfDays);
+
+		} else {
+			System.out.println("Usage:");
+			System.out.println("java in.finalobject.javaone.basics.MonthToDays monthName");
+		}
+
+	
+	}
+
+	
+	}
+
