@@ -1,0 +1,33 @@
+public class BikeRules {
+
+	public static void main(String[] args) {
+		String bikename = args[0];
+		String bikenumber = args[1];		
+		System.out.println("Department Of Vehicle Agency : " + bikename);
+		System.out.println("Enter your vehicle registration number : " + bikenumber);
+		int speedLimit=90;
+		int helmet=1;
+		int licence =1;
+		int violence=1;
+		if(speedLimit>80) {
+			System.out.println("show your Identification:" + bikename  +  bikenumber);
+			System.out.println("You have crossed the speed limit you have to give fine of 2000rupees");
+			}
+		else if(helmet !=1) {
+			System.out.println("You don't have your helmet your fine is 1000rupees");
+		    }
+		else if(licence !=1) {
+			System.out.println("you don't have your helmet your fine is 5000rupees"); 
+		    }
+		else if(violence !=1) {
+			System.out.println("you have violated the road regulations your fine is 500rupees");
+		    }
+		else {
+			System.out.println("You are free to go happy journey sir");
+		  }
+			
+		
+		
+	}
+
+}
